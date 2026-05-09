@@ -1,0 +1,4 @@
+interface:
+  display_name: "Shopify Growth Operator"
+  short_description: "Post-launch Shopify growth workflow"
+  default_prompt: "Use this skill after a Shopify store is launch-ready to plan and produce compliant social content, short-video scripts, creator briefs, landing-page angles, email ideas, and conversion loops from the store growth handoff."

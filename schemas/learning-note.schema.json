@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/hymns-skill-lab/learning-note.schema.json",
+  "title": "Learning Pack Frontmatter",
+  "type": "object",
+  "required": [
+    "pack_id",
+    "skill",
+    "contributor_type",
+    "niche",
+    "market",
+    "platform",
+    "evidence_type",
+    "learning_type",
+    "confidence",
+    "date_observed",
+    "privacy_level",
+    "permission_to_share"
+  ],
+  "properties": {
+    "pack_id": {
+      "type": "string",
+      "minLength": 8
+    },
+    "skill": {
+      "type": "string",
+      "enum": [
+        "shopify-independent-store-builder",
+        "shopify-post-launch-growth-operator",
+        "skill-evolution-operator",
+        "other"
+      ]
+    },
+    "contributor_type": {
+      "type": "string",
+      "enum": ["merchant", "operator", "agency", "developer", "anonymous"]
+    },
+    "niche": {
+      "type": "string",
+      "minLength": 2
+    },
+    "market": {
+      "type": "string",
+      "minLength": 2
+    },
+    "platform": {
+      "type": "string",
+      "minLength": 2
+    },
+    "evidence_type": {
+      "type": "string",
+      "enum": [
+        "official",
+        "operator-anecdote",
+        "case-study",
+        "creative-observation",
+        "own-data",
+        "failed-test"
+      ]
+    },
+    "learning_type": {
+      "type": "string",
+      "enum": [
+        "design-pattern",
+        "store-build-issue",
+        "app-workflow",
+        "growth-idea",
+        "creative-pattern",
+        "failed-test",
+        "new-method",
+        "policy-update",
+        "tooling",
+        "skill-combo"
+      ]
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low"]
+    },
+    "date_observed": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "source_url": {
+      "type": "string"
+    },
+    "privacy_level": {
+      "type": "string",
+      "enum": ["public", "redacted", "private-summary"]
+    },
+    "permission_to_share": {
+      "type": "boolean",
+      "const": true
+    }
+  },
+  "additionalProperties": true
+}

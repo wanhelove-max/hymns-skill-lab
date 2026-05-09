@@ -1,0 +1,4 @@
+interface:
+  display_name: "Shopify Store Builder"
+  short_description: "Launch compliant Shopify stores"
+  default_prompt: "Use this skill to plan, implement, QA, and document a Shopify independent-store launch with pages, SEO, apps, trust systems, mobile UX, and durable workflow memory."

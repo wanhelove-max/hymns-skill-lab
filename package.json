@@ -1,0 +1,17 @@
+{
+  "name": "hymns-skill-lab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Open-source Codex skill lab for Shopify store building, post-launch growth, and automated skill evolution.",
+  "type": "commonjs",
+  "scripts": {
+    "validate": "node scripts/validate-learning-pack.js community/incoming examples/valid-learning-pack examples/invalid-learning-pack --allow-invalid-examples",
+    "validate:incoming": "node scripts/validate-learning-pack.js community/incoming",
+    "promote": "node scripts/promote-incoming.js",
+    "synthesize": "node scripts/synthesize-weekly.js",
+    "test": "npm run validate"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

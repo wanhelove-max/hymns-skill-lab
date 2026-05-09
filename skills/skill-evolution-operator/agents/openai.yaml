@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill Evolution Operator"
+  short_description: "Automate community skill evolution"
+  default_prompt: "Use this skill to design or run an automated GitHub-based evolution workflow for Codex skills: collect community learning packs, validate and redact them, synthesize curated updates, create candidate pull requests, and publish versioned skill releases safely."

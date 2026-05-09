@@ -1,0 +1,31 @@
+name: Weekly Skill Synthesis
+
+on:
+  schedule:
+    - cron: "0 8 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  synthesize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm run validate:incoming
+      - run: node scripts/redact-learning-pack.js community/incoming
+      - run: npm run promote
+      - run: npm run synthesize
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: bot/weekly-skill-synthesis
+          title: "Weekly skill learning synthesis"
+          commit-message: "Synthesize community skill learnings"
+          labels: automated, skill-learning, needs-review
+          body-path: templates/pr-summary.md

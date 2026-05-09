@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/hymns-skill-lab/growth-handoff.schema.json",
+  "title": "Growth Handoff",
+  "type": "object",
+  "required": [
+    "store_name",
+    "store_url",
+    "launch_status",
+    "brand_positioning",
+    "target_customer",
+    "ready_landing_routes",
+    "material_claims_allowed",
+    "claims_banned_or_requiring_proof",
+    "installed_app_stack",
+    "next_growth_objective"
+  ],
+  "properties": {
+    "store_name": { "type": "string" },
+    "store_url": { "type": "string" },
+    "launch_status": { "type": "string" },
+    "brand_positioning": { "type": "string" },
+    "target_customer": { "type": "string" },
+    "ready_landing_routes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "material_claims_allowed": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "claims_banned_or_requiring_proof": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "installed_app_stack": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "next_growth_objective": { "type": "string" }
+  }
+}
