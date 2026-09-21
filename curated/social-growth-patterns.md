@@ -1,6 +1,6 @@
 # Curated Social Growth Patterns
 
-Generated: 2026-05-09T20:05:38.218Z
+Generated: 2026-09-21T14:43:32.731Z
 
 These patterns are synthesized from accepted learning packs. Treat low-confidence items as hypotheses.
 
