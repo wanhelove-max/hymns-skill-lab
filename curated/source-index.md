@@ -1,6 +1,6 @@
 # Source Index
 
-Generated: 2026-05-09T20:05:38.219Z
+Generated: 2026-09-28T16:18:28.363Z
 
 | Pack | Skill | Platform | Learning Type | Evidence | Confidence | Source |
 |---|---|---|---|---|---|---|
