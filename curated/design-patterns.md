@@ -1,6 +1,6 @@
 # Curated Design Patterns
 
-Generated: 2026-05-09T20:05:38.220Z
+Generated: 2026-11-09T18:04:02.780Z
 
 These patterns are synthesized from accepted learning packs. Extract reusable principles; do not copy external assets.
 
