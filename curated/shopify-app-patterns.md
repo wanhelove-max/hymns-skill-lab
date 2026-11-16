@@ -1,6 +1,6 @@
 # Curated Shopify App Patterns
 
-Generated: 2026-05-09T20:05:38.220Z
+Generated: 2026-11-16T17:43:17.085Z
 
 ## 2026-05-10-design-skill-combo-test
 
